@@ -249,7 +249,7 @@ def animate_lines(lines_list, snapshot_index = None, snapshot='snapshot', hover=
     px.line(df, x=xaxis, y=yaxis, title=title, animation_frame=snapshot, range_y=[lines_list.min(), lines_list.max()], hover_name=hover,**kwargs).show()
 
 
-def imshow_fourier(tensor, title='', animation_name='snapshot', facet_labels=[], animation_labels=[], **kwargs):
+def imshow_fourier(tensor, title='', animation_name='snapshot', facet_labels=[], animation_labels=[], xlim=None, ylim=None, **kwargs):
     # Set nice defaults for plotting functions in the 2D fourier basis
     # tensor is assumed to already be in the Fourier Basis
     if tensor.shape[0]==p*p:
@@ -274,6 +274,10 @@ def imshow_fourier(tensor, title='', animation_name='snapshot', facet_labels=[],
     if animation_labels:
         for i, label in enumerate(animation_labels):
             fig.layout.sliders[0].steps[i]["label"] = label
+    if ylim is not None:
+        fig.update_yaxes(range=ylim, autorange=False)
+    if xlim is not None:
+        fig.update_xaxes(range=xlim)
     fig.show()
 
 
