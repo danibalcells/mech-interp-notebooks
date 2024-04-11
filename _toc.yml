@@ -1,0 +1,20 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+defaults:
+  maxdepth: 3
+chapters:
+- file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
+  # sections:
+  #   - file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
+  #   - file: 01-grokking-modular-addition/01-grokking-modular-addition2.ipynb
+
+# format: jb-book
+# root: intro
+# parts:
+#   - caption: Grokking Modular Addition
+#     chapters:
+#     - file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
+#     - file: 01-grokking-modular-addition/01-grokking-modular-addition2.ipynb
