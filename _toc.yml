@@ -5,8 +5,15 @@ format: jb-book
 root: intro
 defaults:
   maxdepth: 3
-chapters:
-- file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
+parts:
+  - caption: Fundamentals
+    chapters:
+    - file: 00-basic-concepts/01-fourier-transform.ipynb
+  - caption: Research Reproductions
+    chapters:
+    - file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
+
+# chapters:
   # sections:
   #   - file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
   #   - file: 01-grokking-modular-addition/01-grokking-modular-addition2.ipynb
