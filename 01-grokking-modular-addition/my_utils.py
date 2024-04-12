@@ -284,7 +284,7 @@ def imshow_fourier(tensor, title='', animation_name='snapshot', facet_labels=[],
 def animate_multi_lines(lines_list, y_index=None, snapshot_index = None, snapshot='snapshot', hover=None, swap_y_animate=False, **kwargs):
     # Can plot an animation of lines with multiple lines on the plot.
     if type(lines_list)==list:
-        lines_list = t.stack(lines_list, axis=0)
+        lines_list = t.stack(np.array(lines_list), axis=0)
     lines_list = utils.to_numpy(lines_list)
     lines_list = lines_list.transpose(2, 0, 1)
     if swap_y_animate:
@@ -308,7 +308,7 @@ def animate_scatter(lines_list, snapshot_index = None, snapshot='snapshot', hove
     # Can plot an animated scatter plot
     # lines_list has shape snapshot x 2 x line
     if type(lines_list)==list:
-        lines_list = t.stack(lines_list, axis=0)
+        lines_list = t.stack(np.array(lines_list), axis=0)
     lines_list = utils.to_numpy(lines_list)
     if snapshot_index is None:
         snapshot_index = np.arange(lines_list.shape[0])
