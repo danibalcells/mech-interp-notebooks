@@ -264,4 +264,4 @@ wsproto==1.2.0
 xxhash==3.4.1
 yarl==1.9.4
 zipp==3.18.1
-torchaudio==2.0.1
+torchaudio
