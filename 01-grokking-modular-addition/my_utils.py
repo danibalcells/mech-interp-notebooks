@@ -235,7 +235,7 @@ def line_marker(x, **kwargs):
 
 def animate_lines(lines_list, snapshot_index = None, snapshot='snapshot', hover=None, xaxis='x', yaxis='y', title='', **kwargs):
     if type(lines_list)==list:
-        lines_list = t.stack(lines_list, axis=0)
+        lines_list = t.stack(np.array(lines_list), axis=0)
     lines_list = utils.to_numpy(lines_list)
     if snapshot_index is None:
         snapshot_index = np.arange(lines_list.shape[0])
@@ -356,7 +356,7 @@ def fft2d(tensor: t.Tensor) -> t.Tensor:
     '''
     # fourier_basis[i] is the i-th basis vector, which we want to multiply along
     return einops.einsum(
-        tensor, fourier_basis, fourier_basis,
+        tensor.to(device), fourier_basis, fourier_basis,
         "px py ..., i px, j py -> i j ..."
     )
 
