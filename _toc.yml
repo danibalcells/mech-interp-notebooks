@@ -12,6 +12,9 @@ parts:
   - caption: Research Reproductions
     chapters:
     - file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
+  - caption: Thoughts & Essays
+    chapters:
+    - file: 02-thoughts-essays/2023-02-24-klara-and-the-sun.md
 
 # chapters:
   # sections:
