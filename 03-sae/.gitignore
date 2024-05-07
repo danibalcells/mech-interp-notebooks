@@ -1,3 +1,5 @@
 minipile
 train
 wandb
+mlp_activations_*
+*.pt
