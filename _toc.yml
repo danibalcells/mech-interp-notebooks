@@ -9,6 +9,7 @@ parts:
   - caption: In progress
     chapters:
     - file: 03-sae/sae.ipynb
+    - file: 04-cognitive-biases/cognitive-biases.ipynb
   - caption: Fundamentals
     chapters:
     - file: 00-basic-concepts/01-fourier-transform.ipynb

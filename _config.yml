@@ -10,7 +10,7 @@ copyright: ''
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
-  exclude_patterns: ['sae.ipynb']
+  exclude_patterns: ['sae.ipynb', 'cognitive-biases.ipynb']
   timeout: 5000
 
 # Define the name of the latex output file for PDF builds
