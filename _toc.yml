@@ -16,6 +16,7 @@ parts:
     chapters:
     - file: 01-grokking-modular-addition/01-grokking-modular-addition.ipynb
     - file: 05-superposition/smaller-models-of-superposition.ipynb
+    - file: 07-belief-state-transformers/belief-state-transformers.ipynb
   - caption: Thoughts & Essays
     chapters:
     - file: 02-thoughts-essays/2023-02-24-klara-and-the-sun.md

@@ -12,7 +12,7 @@ exclude_patterns: ['.venv/**', '_build/**', 'Thumbs.db', '.DS_Store', '**.ipynb_
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
-  exclude_patterns: ['sae.ipynb', 'cognitive-biases.ipynb']
+  exclude_patterns: ['sae.ipynb', 'cognitive-biases.ipynb', 'understanding-mcr2.ipynb', 'belief-state-transformers.ipynb', 'smaller-models-of-superposition.ipynb']
   timeout: 5000
 
 # Define the name of the latex output file for PDF builds
